@@ -10,6 +10,6 @@
 		</ul>
 	</div>
 	<div id="time">
-	Сегодня: <?= date ( "Y-m-d" ) ?>
+	Сегодня: <?= date ( "Y-m-d H:i" ) ?>
 	</div>
 </div>

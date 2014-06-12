@@ -7,7 +7,7 @@ if( function_exists('date_default_timezone_set') )
     
 setlocale(LC_TIME, 'ru_RU.utf8');
     
-if( $_SERVER['HTTP_HOST'] == 'www.bets.ru' )
+if( $_SERVER['HTTP_HOST'] == 'wc2014' )
 {   
 	$local_server		= true;
 }
@@ -19,7 +19,7 @@ else
 $setup_secret_word = 'you_never_guess_it';
 $setup_timeout = 86400 * 10; //10 days
 $setup_cache_folder = $_SERVER['DOCUMENT_ROOT'] . '/cache/';
-$setup_today = date ( "Y-m-d" );
+$setup_today = date ( "Y-m-d"  );
 $setup_beer_tours = 3;
 
 define ( "FATAL",	E_USER_ERROR);
@@ -51,15 +51,15 @@ $LangArr = array(
 
 if( $local_server )
 {
-	$www_main			= 'bets.ru';
-	$www_main_full		= 'http://www.bets.ru';
-	$real_www			= 'http://bets.ru';
+	$www_main			= 'wc2014';
+	$www_main_full		= 'http://wc2014';
+	$real_www			= 'http://wc2014';
 }
 else
 {
-	$www_main			= 'bets.vetko.net';
-	$www_main_full		= 'http://bets.vetko.net';
-	$real_www			= 'http://bets.vetko.net';
+	$www_main			= 'wc2014.vetko.net';
+	$www_main_full		= 'http://wc2014.vetko.net';
+	$real_www			= 'http://wc2014.vetko.net';
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -68,17 +68,17 @@ else
 if( $local_server )
 {
 	$db_host_name_main	= 'localhost';
-	$db_name_main		= 'bets';
+	$db_name_main		= 'wc2014';
 	$db_user_name_main	= 'root';
 	$db_password_main	= '';
 
 }
 else
 {
-	$db_host_name_main	= 'mysql1084.servage.net';
-	$db_name_main		= 'bets_site';
-	$db_user_name_main	= 'bets_site';
-	$db_password_main	= 'dtnjrhtc1';
+	$db_host_name_main	= 'mysql1092.servage.net';
+	$db_name_main		= 'svaroggg1';
+	$db_user_name_main	= 'svaroggg1';
+	$db_password_main	= 'Crfy99yth';
 }
 
 ////////////////////////////////////////////////////////////////////////

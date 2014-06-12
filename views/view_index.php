@@ -14,7 +14,7 @@
 			<div class="post">
 				<h1 class="title">Привет<?= isset ( $UA['user_name'] ) ? ', ' . $UA['user_name'] : ''?>!</h1>
 				<div class="entry">
-					<p>Ставки делать бум?</p>
+					<p>Не забудь сделать ставки!</p>
 				</div>
 			</div>
 		</div>

@@ -15,11 +15,11 @@ if ( !$GA )
    exit();
 }
 
-if ( $GA['g_tour'] > $UA['user_last_tour'] )
+/*if ( $GA['g_tour'] > $UA['user_last_tour'] )
 {
     echo 'Надо сначала завершить ввод результатов за тур ' . $GA['g_tour'];
     exit();
-}
+}*/
 
 $ResultsArr = array();
 $query = "
@@ -28,7 +28,8 @@ user_name,
 user_fam,
 mr_result,
 user_last_tour,
-g_tour
+g_tour,
+g_date_time
     FROM
 match_result,
 user,
@@ -44,6 +45,25 @@ user_name
 ";
 $result = mysql_query( $query ) or eu( __FILE__, __LINE__, $query );
 while ( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) )
-    $ResultsArr[] = $row;
+{
+	/*echo '<br>$today=' . $setup_today . '<br>';
+	echo '<br>$game_date=' . $row['g_date_time'] . '<br>';
+	echo '<br>$game_tour=' . $GA['g_tour'] . '<br>';
+	echo '<br>$user_tour=' . $UA['user_last_tour'] . '<br>';*/
+
+	if ( $setup_today >= $row['g_date_time'] || $GA['g_tour'] <= $UA['user_last_tour'] )
+        $ResultsArr[] = $row;
+	else if ( $GA['g_tour'] > $UA['user_last_tour'] )
+	{
+		echo 'Нельзя смотреть будущие чужие ставки.<br>Надо сначала завершить ввод результатов за тур ' . $GA['g_tour'];
+		exit();
+	}
+	else if ( $setup_today < $row['g_date_time'] )
+	{
+		echo 'Можно смотреть ставки других только за текущую дату';
+		exit();
+	}
+
+}
 
 

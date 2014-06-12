@@ -5,7 +5,7 @@ $MatchResults = ( $user_authorized ? get_match_results ( $UA['user_id'] ) : arra
 $all_entered = true;
 $MatchesArr  = array();
 
-$query = "SELECT * FROM game WHERE 1 ORDER BY g_tour DESC, g_date_time, g_id";
+$query = "SELECT * FROM game WHERE 1 ORDER BY g_tour ASC, g_date_time, g_id";
 $result = mysql_query( $query ) or eu( __FILE__, __LINE__, $query );
 while ( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) )
 {
