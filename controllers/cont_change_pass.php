@@ -1,0 +1,1 @@
+<? if ( !checkRights ( array ( 'user' ) ) ) redirect( '/no_admission/' ); ?>

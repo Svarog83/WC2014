@@ -1,0 +1,20 @@
+BODY {
+ margin: 0px; 
+ background: #CDCDCD; /* Цвет фона */
+}
+
+A {
+	text-decoration: underline; 
+}
+A:hover {
+	text-decoration: underline; 
+	color: red; 
+}
+
+.mTitle {
+	margin-center: 0px;
+	font: 36pt serif;
+	font-weight:bold;
+    font-size: 220%;
+    color: #FFFFF0;
+}

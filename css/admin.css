@@ -1,0 +1,55 @@
+fieldset
+{
+	margin: 6px; 
+	background-color: #c7d2f1; 
+	padding-top: 15px; 
+	padding-bottom: 15px;
+	width: 90%;
+}
+
+.title
+{
+	font-size: 14pt;
+	margin: 20px 0px 30px 10px;
+	color: #000000;
+	height: 20px;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#000037, direction=20, strength=3);
+}
+
+
+.warn
+{
+	border: 1px solid #8a0000;
+	background-color: #FFECDF;
+	color: #000053;
+	font-weight: bold;
+	background-image: url(\icon\warn_1.gif);
+	background-repeat: no-repeat;
+	background-position: 15px 15px;
+	padding: 20px 20px 20px 60px;
+	margin: 0px 35px 0px 35px;
+}
+
+.info
+{
+	border: 1px solid #8A0000;
+	background-color: #ffffe1;
+	color: #ffffe1;
+	font-weight: bold;
+	background-image: url(\icon\info_1.gif);
+	background-repeat: no-repeat;
+	background-position: 15px 15px;
+	padding: 20px 20px 20px 60px;
+	margin: 0px 35px 0px 35px;
+}
+
+.button_on  {
+	border: solid;
+	border-color: black;
+	background-repeat: no-repeat; 	 
+	background-position: 3 2; 
+	/*background-position : 3 3; */
+	border-width:1px;
+	cursor: pointer;
+	
+	}
