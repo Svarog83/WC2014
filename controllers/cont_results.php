@@ -29,7 +29,7 @@ while ( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) )
 
 $sum_tour = $sum_total = $sum_for_beer = array();
 $i = 1;
-$ResultsArr = array();
+$UserResults = $ResultsArr = array();
 $query = "
 	SELECT
 mr_game,
@@ -40,32 +40,60 @@ match_result
     WHERE
 mr_game IN ( '" . implode( "', '", $arr_t ) . "' ) &&
 mr_activ = 'a'
+	ORDER BY
+mr_game ASC
 ";
 $result = mysql_query( $query ) or eu( __FILE__, __LINE__, $query );
 while ( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) )
 {
-	$g_tour 		= $AllTours[$row['mr_game']];
-    $real_result	= $MatchesArr[$g_tour][$row['mr_game']]['g_result'];
-	$points 		= $real_result && $row['mr_result'] ? CalculatePoints( $real_result, $row['mr_result'] ) : 0;
+	$UserResults[$row['mr_game']]['users'][$row['mr_user']] = $row['mr_result'];
+	$UserResults[$row['mr_game']]['mr_result'] = $row['mr_result'];
+}
 
 
-    $i = ceil ( $g_tour / $setup_beer_tours );
+foreach ( $UserResults AS $game_id => $v )
+{
+	$g_tour 		= $AllTours[$game_id];
+    $real_result	= $MatchesArr[$g_tour][$game_id]['g_result'];
 
-    if ( !isset ( $sum_for_beer[$i][$row['mr_user']] ) )
-		$sum_for_beer[$i][$row['mr_user']] = 0;
+	$count_users = count ( $PlayersArr ) - 1;
+	foreach ( $PlayersArr AS $user_id => $v2  )
+	{
+//		echo '<br>$user_id=' . $user_id . '<br>';
+		$own_result = '';
+		$total_points = 0;
 
-	if ( !isset ( $sum_tour[$g_tour][$row['mr_user']] ) )
-		$sum_tour[$g_tour][$row['mr_user']] = 0;
+		foreach ( $v['users'] AS $opponent_id => $opponent_result )
+		{
+			$points = $real_result && $opponent_result ? CalculatePoints( $real_result, $opponent_result ) : 0;
+			/*echo '<br>$opp_id=' . $opponent_id . '<br>';
+			echo '<br>$points=' . $points . '<br>';
+			echo '<br>$opp_result =' . $opponent_result . '<br>';*/
+			if ( $user_id == $opponent_id )
+			{
+				$own_result = $opponent_result;
+				$total_points += $points * $count_users;
+			}
+			else
+				$total_points -= $points;
+		}
 
-	if ( !isset ( $sum_total[$row['mr_user']] ) )
-		$sum_total[$row['mr_user']] = 0;
+		/*echo '<br>$=' . $total_points . '<br>';
+		exit();*/
 
-	$sum_tour[$g_tour][$row['mr_user']] += $points;
-	$sum_total[$row['mr_user']] += $points;
-    $sum_for_beer[$i][$row['mr_user']] += $points;
 
-	$ResultsArr[$row['mr_game']][$row['mr_user']] = array ( 
-							'result' => $row['mr_result'],
-							'game' => $row['mr_game'],
-							'points' => $points );
+		if ( !isset ( $sum_tour[$g_tour][$user_id] ) )
+			$sum_tour[$g_tour][$user_id] = 0;
+
+		if ( !isset ( $sum_total[$user_id] ) )
+			$sum_total[$user_id] = 0;
+
+		$sum_tour[$g_tour][$user_id] += $total_points;
+		$sum_total[$user_id] += $total_points;
+
+		$ResultsArr[$game_id][$user_id] = array (
+								'result' => $own_result,
+								'game' => $game_id,
+								'points' => $total_points );
+	}
 }
