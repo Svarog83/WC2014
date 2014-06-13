@@ -364,8 +364,10 @@ function end_cache( $file_name )
  */
 function CalculatePoints( $real_result, $forecast )
 {
-    $points = 0 ;
-    $real_result = explode( '-' , $real_result ) ;
+	global $result_sum;
+	global $diff_score_sum;
+	global $ishod_sum;
+    /*$real_result = explode( '-' , $real_result ) ;
     $forecast = explode( '-' , $forecast ) ;
     if( $real_result[0] > $real_result[1] && $forecast[0] > $forecast[1] ||
         $real_result[0] == $real_result[1] && $forecast[0] == $forecast[1] ||
@@ -376,8 +378,27 @@ function CalculatePoints( $real_result, $forecast )
     if( $real_result[1] == $forecast[1] )
             $points += 1 ;
     if( ( $real_result[0] - $real_result[1] ) == ( $forecast[0] - $forecast[1] ) )
-            $points += 1 ;
+            $points += 1 ;*/
+
+	$points = ( $forecast == $real_result ? $result_sum : ( DiffScore( $forecast ) == DiffScore( $real_result ) ? $diff_score_sum : ( sign2( DiffScore( $forecast ) ) == sign2( DiffScore( $real_result ) ) ? $ishod_sum : 0 ) ) );
+
     return $points;
+}
+
+function DiffScore( $val )
+{
+	$arr = explode ( '-', $val );
+
+	$diff = $arr[0] - $arr[1];
+
+	return $diff;
+}
+
+function sign2($a)
+{
+	if( $a>0 ) return 1;
+	else if ( $a < 0 ) return -1;
+	else return 2;
 }
 
 function get_match_results ( $user_id )

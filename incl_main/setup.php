@@ -21,6 +21,9 @@ $setup_timeout = 86400 * 10; //10 days
 $setup_cache_folder = $_SERVER['DOCUMENT_ROOT'] . '/cache/';
 $setup_today = date ( "Y-m-d"  );
 $setup_beer_tours = 3;
+$result_sum = 500;
+$diff_score_sum = 300;
+$ishod_sum = 150;
 
 define ( "FATAL",	E_USER_ERROR);
 define ( "ERROR",	E_USER_WARNING);
