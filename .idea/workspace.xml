@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42b47317-04d8-4591-ac4d-8c28f360fff5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/ajax_show_matches.php" afterPath="$PROJECT_DIR$/admin/views/ajax_show_matches.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/cont_match_bets.php" afterPath="$PROJECT_DIR$/controllers/cont_match_bets.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions/function_all.php" afterPath="$PROJECT_DIR$/functions/function_all.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/incl_main/setup.php" afterPath="$PROJECT_DIR$/incl_main/setup.php" />
+    <list default="true" id="42b47317-04d8-4591-ac4d-8c28f360fff5" name="Default" comment="Correct calculations for 3 people&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/cont_results.php" afterPath="$PROJECT_DIR$/controllers/cont_results.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="www.iws" />
@@ -30,23 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="setup.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/incl_main/setup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="26" selection-start="339" selection-end="339" vertical-scroll-proportion="0.47553816" vertical-offset="162" max-vertical-offset="8100">
-              <folding>
-                <marker date="1402680078916" expanded="true" signature="2355:2365" placeholder="..." />
-                <marker date="1402680078916" expanded="true" signature="2378:2391" placeholder="..." />
-                <marker date="1402680078916" expanded="true" signature="2586:2599" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="temp_navigation.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/temp_navigation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="34" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="540">
+            <state line="12" column="34" selection-start="563" selection-end="563" vertical-scroll-proportion="-8.944445" vertical-offset="2" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -77,16 +62,21 @@
               <folding>
                 <marker date="1402597364224" expanded="true" signature="144:190" placeholder="SELECT * FRO..game..." />
                 <marker date="1402597364224" expanded="true" signature="547:803" placeholder="SELECT user_..match_result..." />
+                <marker date="1402597364224" expanded="true" signature="934:1577" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax_show_matches.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/views/ajax_show_matches.php">
+      <file leaf-file-name="cont_results.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/cont_results.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="17" selection-start="305" selection-end="306" vertical-scroll-proportion="-5.0555553" vertical-offset="169" max-vertical-offset="999">
-              <folding />
+            <state line="21" column="29" selection-start="972" selection-end="972" vertical-scroll-proportion="0.7355623" vertical-offset="83" max-vertical-offset="2808">
+              <folding>
+                <marker date="1402733547785" expanded="true" signature="229:332" placeholder="SELECT user_..user..." />
+                <marker date="1402733547785" expanded="true" signature="670:744" placeholder="SELECT * FRO..game..." />
+                <marker date="1402733547785" expanded="true" signature="763:870" placeholder="SELECT * FRO..game..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,31 +84,17 @@
       <file leaf-file-name="view_get_excel.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/view_get_excel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="37" selection-start="1478" selection-end="1478" vertical-scroll-proportion="-7.3055553" vertical-offset="1033" max-vertical-offset="3051">
+            <state line="46" column="0" selection-start="1396" selection-end="1396" vertical-scroll-proportion="-13.444445" vertical-offset="758" max-vertical-offset="3051">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_match_bets.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/view_match_bets.php">
+      <file leaf-file-name="cont_get_excel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/cont_get_excel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="810">
-              <folding>
-                <element signature="e#409#436#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cont_results.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/cont_results.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="64" selection-start="1682" selection-end="1682" vertical-scroll-proportion="-5.9722223" vertical-offset="1081" max-vertical-offset="2079">
-              <folding>
-                <marker date="1369917063210" expanded="true" signature="229:332" placeholder="SELECT user_..user..." />
-                <marker date="1369917063210" expanded="true" signature="670:744" placeholder="SELECT * FRO..game..." />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="297">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,6 +104,8 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="398" column="13" selection-start="10280" selection-end="10280" vertical-scroll-proportion="-23.972221" vertical-offset="9694" max-vertical-offset="12582">
               <folding>
+                <marker date="1402595043416" expanded="true" signature="6117:6472" placeholder="..." />
+                <marker date="1402595043416" expanded="false" signature="6300:6435" placeholder="..." />
                 <marker date="1402595043416" expanded="true" signature="6632:6669" placeholder="SELECT * FRO..role..." />
                 <marker date="1402595043416" expanded="true" signature="6941:6994" placeholder="SELECT t_id,..team..." />
                 <marker date="1402595043416" expanded="true" signature="7346:7399" placeholder="SELECT t_id,..team..." />
@@ -140,31 +118,14 @@
       <file leaf-file-name="view_results.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/view_results.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2727">
+            <state line="46" column="0" selection-start="1739" selection-end="1739" vertical-scroll-proportion="-12.694445" vertical-offset="785" max-vertical-offset="2727">
               <folding>
-                <marker date="1369917063787" expanded="true" signature="125:3794" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="163:3787" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="201:300" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="209:291" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="347:3515" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="369:3506" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="432:3496" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="506:3459" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="517:710" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="762:833" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="932:1077" placeholder="..." />
-                <marker date="1369917063787" expanded="false" signature="998:1015" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="1193:1821" placeholder="..." />
-                <marker date="1369917063787" expanded="false" signature="1549:1568" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="1902:2277" placeholder="..." />
-                <marker date="1369917063787" expanded="false" signature="1959:1976" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="2413:2901" placeholder="..." />
-                <marker date="1369917063787" expanded="false" signature="2470:2503" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="3000:3427" placeholder="..." />
-                <marker date="1369917063787" expanded="false" signature="3057:3091" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="3615:3714" placeholder="..." />
-                <marker date="1369917063787" expanded="true" signature="3623:3705" placeholder="..." />
-                <marker date="1369917063787" expanded="false" signature="3754:3766" placeholder="..." />
+                <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#3;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#6;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,6 +152,7 @@
         <option value="$PROJECT_DIR$/controllers/cont_match_bets.php" />
         <option value="$PROJECT_DIR$/admin/views/ajax_show_matches.php" />
         <option value="$PROJECT_DIR$/incl_main/setup.php" />
+        <option value="$PROJECT_DIR$/controllers/cont_results.php" />
       </list>
     </option>
   </component>
@@ -199,7 +161,7 @@
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
-    <option name="height" value="1050" />
+    <option name="height" value="1170" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -317,19 +279,46 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="42b47317-04d8-4591-ac4d-8c28f360fff5" name="Default" comment="" />
       <created>1402577072637</created>
       <updated>1402577072637</updated>
     </task>
+    <task id="LOCAL-00001" summary="Count function changed">
+      <created>1402680155613</created>
+      <updated>1402680155613</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Correct calculations for 3 people">
+      <created>1402682947682</created>
+      <updated>1402682947682</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964602" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29101562" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -363,6 +352,9 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Count function changed" />
+    <MESSAGE value="Correct calculations for 3 people" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct calculations for 3 people" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -373,9 +365,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="12" selection-start="486" selection-end="498" vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="7992">
           <folding>
-            <marker date="1402680078916" expanded="true" signature="2355:2365" placeholder="..." />
-            <marker date="1402680078916" expanded="true" signature="2378:2391" placeholder="..." />
-            <marker date="1402680078916" expanded="true" signature="2586:2599" placeholder="..." />
+            <marker date="1402680078916" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402680078916" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402680078916" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -423,6 +415,7 @@
           <folding>
             <marker date="1402597364224" expanded="true" signature="144:190" placeholder="SELECT * FRO..game..." />
             <marker date="1402597364224" expanded="true" signature="547:803" placeholder="SELECT user_..match_result..." />
+            <marker date="1402597364224" expanded="true" signature="934:1577" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -435,13 +428,6 @@
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="41" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="702">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/temp_navigation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="34" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
@@ -469,51 +455,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/view_results.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2727">
-          <folding>
-            <marker date="1369917063787" expanded="true" signature="125:3794" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="163:3787" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="201:300" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="209:291" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="347:3515" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="369:3506" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="432:3496" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="506:3459" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="517:710" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="762:833" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="932:1077" placeholder="..." />
-            <marker date="1369917063787" expanded="false" signature="998:1015" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="1193:1821" placeholder="..." />
-            <marker date="1369917063787" expanded="false" signature="1549:1568" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="1902:2277" placeholder="..." />
-            <marker date="1369917063787" expanded="false" signature="1959:1976" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="2413:2901" placeholder="..." />
-            <marker date="1369917063787" expanded="false" signature="2470:2503" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="3000:3427" placeholder="..." />
-            <marker date="1369917063787" expanded="false" signature="3057:3091" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="3615:3714" placeholder="..." />
-            <marker date="1369917063787" expanded="true" signature="3623:3705" placeholder="..." />
-            <marker date="1369917063787" expanded="false" signature="3754:3766" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/cont_results.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="64" selection-start="1682" selection-end="1682" vertical-scroll-proportion="-5.9722223" vertical-offset="1081" max-vertical-offset="2079">
-          <folding>
-            <marker date="1369917063210" expanded="true" signature="229:332" placeholder="SELECT user_..user..." />
-            <marker date="1369917063210" expanded="true" signature="670:744" placeholder="SELECT * FRO..game..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/function_all.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="398" column="13" selection-start="10280" selection-end="10280" vertical-scroll-proportion="-23.972221" vertical-offset="9694" max-vertical-offset="12582">
           <folding>
+            <marker date="1402595043416" expanded="true" signature="6117:6472" placeholder="..." />
+            <marker date="1402595043416" expanded="false" signature="6300:6435" placeholder="..." />
             <marker date="1402595043416" expanded="true" signature="6632:6669" placeholder="SELECT * FRO..role..." />
             <marker date="1402595043416" expanded="true" signature="6941:6994" placeholder="SELECT t_id,..team..." />
             <marker date="1402595043416" expanded="true" signature="7346:7399" placeholder="SELECT t_id,..team..." />
@@ -525,19 +472,7 @@
     <entry file="file://$PROJECT_DIR$/views/view_match_bets.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="872">
-          <folding>
-            <element signature="e#409#436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/cont_match_bets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="352" selection-end="352" vertical-scroll-proportion="-9.75" vertical-offset="0" max-vertical-offset="2025">
-          <folding>
-            <marker date="1402597364224" expanded="true" signature="144:190" placeholder="SELECT * FRO..game..." />
-            <marker date="1402597364224" expanded="true" signature="547:803" placeholder="SELECT user_..match_result..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -548,20 +483,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/view_get_excel.php">
+    <entry file="file://$PROJECT_DIR$/incl_main/setup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="37" selection-start="1478" selection-end="1478" vertical-scroll-proportion="-7.3055553" vertical-offset="1033" max-vertical-offset="3051">
+        <state line="6" column="4" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="8100">
+          <folding>
+            <marker date="1402680078916" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402680078916" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402680078916" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/temp_navigation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="34" selection-start="563" selection-end="563" vertical-scroll-proportion="-8.944445" vertical-offset="2" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/incl_main/setup.php">
+    <entry file="file://$PROJECT_DIR$/controllers/cont_match_bets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="339" selection-end="339" vertical-scroll-proportion="0.47553816" vertical-offset="162" max-vertical-offset="8100">
+        <state line="13" column="25" selection-start="352" selection-end="352" vertical-scroll-proportion="-9.75" vertical-offset="0" max-vertical-offset="2025">
           <folding>
-            <marker date="1402680078916" expanded="true" signature="2355:2365" placeholder="..." />
-            <marker date="1402680078916" expanded="true" signature="2378:2391" placeholder="..." />
-            <marker date="1402680078916" expanded="true" signature="2586:2599" placeholder="..." />
+            <marker date="1402597364224" expanded="true" signature="144:190" placeholder="SELECT * FRO..game..." />
+            <marker date="1402597364224" expanded="true" signature="547:803" placeholder="SELECT user_..match_result..." />
+            <marker date="1402597364224" expanded="true" signature="934:1577" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/view_results.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1739" selection-end="1739" vertical-scroll-proportion="-12.694445" vertical-offset="785" max-vertical-offset="2727">
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#3;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#6;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/view_get_excel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1396" selection-end="1396" vertical-scroll-proportion="-13.444445" vertical-offset="758" max-vertical-offset="3051">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/cont_get_excel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/cont_results.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="29" selection-start="972" selection-end="972" vertical-scroll-proportion="0.7355623" vertical-offset="83" max-vertical-offset="2808">
+          <folding>
+            <marker date="1402733547785" expanded="true" signature="229:332" placeholder="SELECT user_..user..." />
+            <marker date="1402733547785" expanded="true" signature="670:744" placeholder="SELECT * FRO..game..." />
+            <marker date="1402733547785" expanded="true" signature="763:870" placeholder="SELECT * FRO..game..." />
           </folding>
         </state>
       </provider>

@@ -16,7 +16,7 @@ $MatchesArr = array();
 if ( !isset ( $to_excel ) )
 	$query = "SELECT * FROM game WHERE g_result != '' ORDER BY g_tour, g_date_time, g_id";
 else
-	$query = "SELECT * FROM game WHERE g_tour <= '" . $UA['user_last_tour'] . "' ORDER BY g_tour, g_date_time, g_id";
+	$query = "SELECT * FROM game WHERE g_result != '' OR g_date_time <= '$setup_today' ORDER BY g_tour, g_date_time, g_id";
 $result = mysql_query( $query ) or eu( __FILE__, __LINE__, $query );
 
 $arr_t = $AllTours = array();
