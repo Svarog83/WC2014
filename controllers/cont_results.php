@@ -46,8 +46,11 @@ mr_game ASC
 $result = mysql_query( $query ) or eu( __FILE__, __LINE__, $query );
 while ( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) )
 {
-	$UserResults[$row['mr_game']]['users'][$row['mr_user']] = $row['mr_result'];
-	$UserResults[$row['mr_game']]['mr_result'] = $row['mr_result'];
+	if ( isset ( $PlayersArr[$row['mr_user']] ) )
+	{
+		$UserResults[$row['mr_game']]['users'][$row['mr_user']] = $row['mr_result'];
+		$UserResults[$row['mr_game']]['mr_result'] = $row['mr_result'];
+	}
 }
 
 
