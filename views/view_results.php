@@ -53,15 +53,6 @@
                                 <td><?= isset ( $sum_tour[$g_tour][$user_id] ) ? '<b>' . $sum_tour[$g_tour][$user_id] . '</b>' : '0' ?></td>
 							 <? endforeach; ?>
 						     </tr>
-						     <? if ( $g_tour % $setup_beer_tours == 0 ): ?>
-						     <? $j = ceil ( $g_tour / $setup_beer_tours ) ?>
-						        <tr>
-                                <td colspan="3" style="font-weight:bold; font-size:16px;">После <?= $setup_beer_tours?>-х туров:</td>
-                                <? foreach ( $PlayersArr AS $user_id => $v ): ?>
-                                <td <?= $sum_for_beer[$j][$user_id] == max( $sum_for_beer[$j] ) ? 'style="color:red;"' : '' ?>><?= isset ( $sum_for_beer[$j][$user_id] ) ? '<b>' . $sum_for_beer[$j][$user_id] . '</b>' : '0' ?></td>
-							 <? endforeach; ?>
-						     </tr>
-						     <? endif; ?>
                         <? endforeach; ?>
                             <tr>
                                 <td colspan="3" style="font-weight:bold; font-size: 18px;">TOTAL:</td>
